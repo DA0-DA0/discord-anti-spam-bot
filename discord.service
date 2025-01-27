@@ -1,0 +1,9 @@
+[Unit]
+Description=DAO DAO Anti-Spam Discord Bot
+
+[Install]
+WantedBy=default.target
+
+[Service]
+ExecStart=/home/daodao/discord/run
+Restart=always

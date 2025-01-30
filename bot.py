@@ -12,7 +12,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if "᲼" in message.author.display_name and "astrovault" in message.content.lower():
+    content = message.content.lower()
+    if "axvdex.org" in content or ("astrovault" in content and "airdrop" in content):
         print(f"Deleting message from {message.author.display_name}")
         print(f"  > {message.content}")
 
